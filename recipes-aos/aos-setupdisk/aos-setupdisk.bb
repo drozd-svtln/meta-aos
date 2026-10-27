@@ -9,7 +9,7 @@ SRC_URI = " \
     file://aosdisk_secondary.cfg \
 "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 FILES:${PN} = " \
     ${aos_opt_dir} \

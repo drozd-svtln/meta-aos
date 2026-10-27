@@ -12,7 +12,7 @@ SRC_URI = " \
     file://cgroup-exporter.service \
 "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 inherit systemd
 
@@ -29,8 +29,8 @@ FILES:${PN} += " \
 
 do_install() {
     install -d ${D}${libexecdir}/${BPN}
-    install -m 0755 ${WORKDIR}/cgroup_exporter.py ${D}${libexecdir}/${BPN}/cgroup_exporter.py
+    install -m 0755 ${UNPACKDIR}/cgroup_exporter.py ${D}${libexecdir}/${BPN}/cgroup_exporter.py
 
     install -d ${D}${systemd_system_unitdir}
-    install -m 0644 ${WORKDIR}/cgroup-exporter.service ${D}${systemd_system_unitdir}
+    install -m 0644 ${UNPACKDIR}/cgroup-exporter.service ${D}${systemd_system_unitdir}
 }
