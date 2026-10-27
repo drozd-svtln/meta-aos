@@ -19,7 +19,7 @@ SRCREV = "8f6b94409d4872265076df310492da1e5f6abdf7"
 
 SRC_URI = "git://github.com/latchset/${BPN}.git;branch=main;protocol=https"
 
-S = "${WORKDIR}/git"
+S = "${UNPACKDIR}/git"
 
 inherit meson pkgconfig
 
