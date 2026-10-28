@@ -21,8 +21,6 @@ SRC_URI += " \
     file://jwt.key.pub \
 "
 
-S = "${UNPACKDIR}/git"
-
 inherit cargo cargo-update-recipe-crates systemd 
 
 DEPENDS = "protobuf-native grpc-native"
