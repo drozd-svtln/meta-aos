@@ -52,8 +52,6 @@ RDEPENDS:${PN} += " \
     aos-target \
 "
 
-S = "${UNPACKDIR}/git"
-
 do_compile[network] = "1"
 do_configure[network] =  "1"
 

@@ -15,8 +15,6 @@ SRC_URI += " \
     file://aos-cm-service.conf \
 "
 
-S = "${UNPACKDIR}/git"
-
 inherit autotools pkgconfig cmake systemd
 
 DEPENDS += "poco systemd grpc grpc-native protobuf-native protobuf curl libnl nftables"

@@ -13,8 +13,6 @@ SRC_URI = " \
     file://telemetry-emulator.service \
 "
 
-S = "${UNPACKDIR}/git"
-
 RDEPENDS:${PN} = " \
     python3 \
     python3-core \
