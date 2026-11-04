@@ -10,7 +10,7 @@ SRC_URI = " \
 RDEPENDS:${PN} = " \
     bash \
     cryptsetup \
-    lvm2-udevrules \
+    lvm2 \
     opensc \
     openssl-bin \
     coreutils \
