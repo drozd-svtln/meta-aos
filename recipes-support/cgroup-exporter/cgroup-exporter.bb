@@ -12,8 +12,6 @@ SRC_URI = " \
     file://cgroup-exporter.service \
 "
 
-S = "${UNPACKDIR}"
-
 inherit systemd
 
 SYSTEMD_SERVICE:${PN} = "cgroup-exporter.service"

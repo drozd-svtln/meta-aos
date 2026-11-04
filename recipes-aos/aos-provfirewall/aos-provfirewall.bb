@@ -10,8 +10,6 @@ SRC_URI = " \
     file://aos-target.conf \
 "
 
-S = "${UNPACKDIR}"
-
 inherit systemd
 
 SYSTEMD_SERVICE:${PN} = "aos-provfirewall.service"

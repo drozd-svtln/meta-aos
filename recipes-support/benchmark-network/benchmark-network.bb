@@ -9,8 +9,6 @@ SRC_URI = " \
     file://sockperf-servers.sh \
 "
 
-S = "${UNPACKDIR}"
-
 FILES:${PN} = " \
     ${aos_opt_dir} \
 "

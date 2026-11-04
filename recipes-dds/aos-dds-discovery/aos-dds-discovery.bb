@@ -10,8 +10,6 @@ LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384
 
 SRC_URI = "file://aos-dds-discovery.service"
 
-S = "${UNPACKDIR}"
-
 inherit systemd
 
 SYSTEMD_SERVICE:${PN} = "aos-dds-discovery.service"
