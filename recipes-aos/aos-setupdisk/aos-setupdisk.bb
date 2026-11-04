@@ -19,7 +19,6 @@ RDEPENDS:${PN} = " \
     bash \
     diskencryption \
     lvm2 \
-    lvm2-udevrules \
     e2fsprogs \
     e2fsprogs-tune2fs \
     quota \
