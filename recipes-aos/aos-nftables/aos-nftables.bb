@@ -8,6 +8,8 @@ SRC_URI = " \
     file://aos-nftables.service \
 "
 
+S = "${UNPACKDIR}"
+
 inherit systemd
 
 SYSTEMD_SERVICE:${PN} = "aos-nftables.service"

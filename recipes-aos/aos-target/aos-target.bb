@@ -9,6 +9,8 @@ SRC_URI = " \
     file://aoscore-benchmark.env \
 "
 
+S = "${UNPACKDIR}"
+
 inherit systemd
 
 SYSTEMD_SERVICE:${PN} = "aos.target"

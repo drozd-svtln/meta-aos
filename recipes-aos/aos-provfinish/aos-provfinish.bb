@@ -10,6 +10,7 @@ SRC_URI = " \
     file://provfinish.sh \
 "
 
+S = "${UNPACKDIR}"
 
 FILES:${PN} = " \
     ${aos_var_dir} \

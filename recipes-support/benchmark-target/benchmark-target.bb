@@ -11,6 +11,8 @@ SRC_URI = " \
     file://benchmark.target.in \
 "
 
+S = "${UNPACKDIR}"
+
 inherit systemd
 
 SYSTEMD_SERVICE:${PN} = "benchmark.target"

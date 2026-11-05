@@ -16,6 +16,8 @@ SRC_URI = " \
     file://event-exporter.yml \
 "
 
+S = "${UNPACKDIR}"
+
 inherit systemd
 
 SYSTEMD_SERVICE:${PN} = "event-exporter.service"

@@ -1,5 +1,7 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/initramfs-framework:"
 
+S = "${UNPACKDIR}"
+
 SRC_URI += " \
     file://aosupdate \
     file://kmsglog \

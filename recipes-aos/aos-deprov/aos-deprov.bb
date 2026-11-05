@@ -8,6 +8,8 @@ SRC_URI = " \
     file://clearhsm.sh \
 "
 
+S = "${UNPACKDIR}"
+
 FILES:${PN} = " \
     ${aos_opt_dir} \
 "

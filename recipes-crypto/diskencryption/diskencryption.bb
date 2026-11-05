@@ -7,6 +7,8 @@ SRC_URI = " \
     file://diskencryption.sh \
 "
 
+S = "${UNPACKDIR}"
+
 RDEPENDS:${PN} = " \
     bash \
     cryptsetup \
