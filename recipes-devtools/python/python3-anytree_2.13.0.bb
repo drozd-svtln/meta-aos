@@ -7,7 +7,7 @@ PYPI_PACKAGE = "anytree"
 
 SRC_URI[sha256sum] = "c9d3aa6825fdd06af7ebb05b4ef291d2db63e62bb1f9b7d9b71354be9d362714"
 
-inherit pypi python_poetry_core
+inherit pypi python_pdm
 
 RDEPENDS:${PN} += " \
     python3-six \
