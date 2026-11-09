@@ -52,6 +52,8 @@ RDEPENDS:${PN} += " \
     aos-target \
 "
 
+S = "${UNPACKDIR}/git/sources/aos-iamanager-git"
+
 do_compile[network] = "1"
 do_configure[network] =  "1"
 
