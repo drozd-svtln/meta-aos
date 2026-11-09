@@ -15,6 +15,8 @@ SRC_URI += " \
     file://aos-dirs-service.conf \
 "
 
+S = "${UNPACKDIR}/git"
+
 inherit cmake pkgconfig systemd
 
 SYSTEMD_SERVICE:${PN} = "aos-cm.service"
