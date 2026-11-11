@@ -1,5 +1,7 @@
 DESCRIPTION = "AosCore Communication Manager"
 
+S = "${UNPACKDIR}/git/sources/aos-communicationmanager-git"
+
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=86d3f3a95c324c9479bd8986968f4327"
 
@@ -14,8 +16,6 @@ SRC_URI += " \
     file://aos-target.conf \
     file://aos-dirs-service.conf \
 "
-
-S = "${UNPACKDIR}/git/sources/aos-communicationmanager-git"
 
 inherit cmake pkgconfig systemd
 
