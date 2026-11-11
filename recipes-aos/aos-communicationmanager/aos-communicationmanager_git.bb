@@ -38,6 +38,7 @@ EXTRA_OECMAKE += " \
     -DWITH_IAM=OFF \
     -DWITH_MP=OFF \
     -DWITH_SM=OFF \
+    -DCMAKE_CXX_FLAGS='-Wno-error' \
 "
 OECMAKE_GENERATOR = "Unix Makefiles"
 
